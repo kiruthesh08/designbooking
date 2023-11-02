@@ -1,0 +1,300 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  scroll-behavior: smooth;
+}
+/* for navbar  */
+.navbar {
+  background-color: #000000;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 77px;
+}
+.navbar h1 {
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 500;
+}
+.searchBar {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.search {
+  padding: 10px;
+  outline: none;
+  border-radius: 7px;
+  color: #fff;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.search-icon {
+  position: absolute;
+  right: 20px;
+}
+/* for sidebar  */
+
+.sidenav {
+  height: 100%;
+  width: 170px;
+  position: fixed;
+  top: 77px;
+  background: rgba(255, 0, 0, 0.6);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: black;
+  display: block;
+}
+
+/* for body content main div  */
+.content {
+  margin-left: 170px;
+}
+/* for hero section  */
+.heroSection {
+  text-align: center;
+}
+.heroSection h1 {
+  color: #000000;
+  margin-top: 68px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+}
+.heroSection p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.heroSection button,
+.customerReview button {
+  border-radius: 8px;
+  background: #000;
+  padding: 12px;
+  text-align: center;
+  border: none;
+  color: white;
+  width: 160px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+.heroSection input {
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+  outline: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  width: 300px;
+}
+.heroSection p,
+.heroSection button,
+.heroSection input {
+  margin-top: 24px;
+}
+
+/* card section  */
+.cardSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 35px;
+  gap: 20px;
+}
+.card {
+  width: 30%;
+
+  border: 1px solid rgb(204, 203, 203);
+  border-radius: 8px;
+}
+
+.container {
+  padding: 2px 16px;
+}
+.card h4 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.card p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+/* feature section  */
+.featureSection {
+  margin-top: 45px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.featureCard {
+  display: flex;
+  align-items: start;
+  width: 43%;
+  padding: 16px;
+  gap: 16px;
+
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.featureCard img {
+  width: 100px;
+  height: 104px;
+}
+.featureContent h4 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.featureContent p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.customerReview {
+  margin-top: 45px;
+  padding: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.customerReview h1 {
+  color: #000000;
+  margin-bottom: 22px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+}
+.reviewCard {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 16px;
+}
+.reviewCardImage {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+}
+.reviewCardSection {
+  display: flex;
+  align-items: center;
+  gap: 2;
+  justify-content: space-between;
+}
+/* footer  */
+.footerSection {
+  display: flex;
+  gap: 50px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.footerCarousel {
+  padding: 30px;
+  background: rgba(255, 0, 0, 0.45);
+  overflow: hidden;
+}
+
+.carousel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: changeText 8s infinite; /* Change text every 8 seconds */
+}
+
+.footerCarousel p {
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  display: none; /* Hide all paragraphs initially */
+}
+
+@keyframes changeText {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  10%,
+  90% {
+    opacity: 1;
+  }
+}
+
+/* for responsive screens  */
+
+@media (max-width: 768px) {
+  .navbar h1 {
+    font-size: 35px;
+  }
+
+  .search {
+    padding: 8px;
+  }
+
+  .search-icon {
+    right: 20px;
+  }
+  .sidenav {
+    display: none;
+  }
+  .content {
+    margin-left: 0px;
+  }
+  .cardSection .card {
+    width: 90%;
+  }
+  .featureCard {
+    width: 90%;
+    margin: 10px;
+  }
+  .reviewCard {
+    font-size: 12px;
+    width: 100%;
+    margin: 0px;
+  }
+  .customerReview {
+    padding: 5px;
+  }
+  #reviewCard1 {
+    margin-right: 0px !important;
+  }
+  .footerSection span {
+    font-size: 12px;
+  }
+  .footerCarousel p {
+    font-size: 12px !important;
+  }
+}
