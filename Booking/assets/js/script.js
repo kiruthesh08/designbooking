@@ -12,7 +12,7 @@ function changeParagraph() {
 changeParagraph();
 
 setInterval(changeParagraph, 6000);
-
+/*
 //   for sidenav
 const sidenav = document.querySelector(".sidenav");
 
@@ -23,3 +23,4 @@ window.addEventListener("scroll", () => {
     sidenav.style.top = "77px";
   }
 });
+*/
